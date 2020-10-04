@@ -1,0 +1,245 @@
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.container{
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+   
+  
+  }
+  .dot{
+   
+    height: 40px;
+    width: 50px;
+    
+  
+    display: inline-block;
+  }
+  
+   
+    
+  .btntablebtntable-block{
+    margin-top: 25px;
+      border-radius: 12px;
+      color: #f8f1f7;
+      align-items: center;
+      background-color: #2837c0;
+  }
+    
+    
+    #hero h1 {
+      margin: 0;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 72px;
+      color: #d5e2e4;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    #hero h2 {
+      color: #5e5e5e;
+      margin: 10px 0 0 0;
+      font-size: 22px;
+    }
+    
+   
+   
+    
+    #hero .icon-boxes {
+      padding-left:200px ;
+      margin-top: 100px;
+    
+  
+    }
+    
+    #hero .icon-box {
+      padding: 50px 30px;
+      border: 200px;
+      margin-left: 50px ;
+  
+      position: relative;
+      overflow: hidden;
+      background: rgb(245, 248, 250);
+      box-shadow: 0 0 29px 0 rgba(236, 75, 11, 0.08);
+      transition: all 0.3s ease-in-out;
+      border-color: orangered;
+      border-radius: 8px;
+      z-index: 1;
+      height: 270px;
+      /* width: 400px; */
+      
+    }
+    
+    #hero .icon-box .title {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+      size: 20px;
+    }
+    
+    #hero .icon-box .title a {
+      color: #3627b8;
+      transition: 0.3s;
+    }
+    
+    #hero .icon-box .description {
+      font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 0;
+    }
+    
+    #hero .icon-box .icon {
+      margin-bottom: 20px;
+      padding-top: 10px;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+      font-size: 36px;
+      line-height: 1;
+      color: #cfd9e0;
+      border-radius: 5px;
+    }
+    
+    #hero .icon-box:hover {
+      transform: scale(1.58);
+    }
+    
+    #hero .icon-box:hover .title a {
+      color: #dae2e7;
+    }
+    
+    @media (min-width: 1024px) {
+      #hero {
+        background-attachment: fixed;
+      }
+    }
+    
+    @media (max-width: 992px), (max-height: 500) {
+      #hero {
+        height: auto;
+      }
+      #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    
+    /*--------------------------------------------------------------
+    # Sections General
+    --------------------------------------------------------------*/
+    section {
+      padding: 80px 0;
+    }
+    
+    .section-bg {
+      background-color: #f8fbfe;
+    }
+    
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      color: #124265;
+    }
+    
+    .section-title p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #919191;
+    }
+
+
+    
+ #wrapper {
+    overflow-x: hidden;
+   background-color: #c4dbdb;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  background-color: tomato;
+ 
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  color: #c4dbdb;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+#footer {
+  background: #587187;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
+
+
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}

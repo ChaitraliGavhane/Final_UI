@@ -1,0 +1,40 @@
+
+
+<app-landingpage></app-landingpage>
+<div class="modal" style="display:block;width:1400px">
+
+
+  <form #myForm="ngForm" (submit)="submitted()" class="modal-content animate">
+    <div class="form-group">
+    <div class="imgcontainer">
+      <span [routerLink]="['']"class="close" title="Close Modal">&times;</span>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKCH-416MnTqcI4qKN0JKIGlxjZbtajQYv1A&usqp=CAU"
+        alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname" class="form-label">Username</label>
+      <input type="text" class="form-control"name="name" [(ngModel)]="FormData.name" placeholder="Enter your name"
+      id="uname"  required>
+
+      <label for="pass" class="form-label">Password</label>
+      <input class="form-control" type="password" placeholder="Enter Password" name="password" [(ngModel)]="FormData.password"
+      ngModel required>
+
+      <button type="submit" (click) = submitted() [disabled]="!myForm.form.valid"><b><i>LOGIN</i></b></button>
+      <!-- <label>
+          <input type="checkbox" checked="checked" name="remember"> <b><i>Remember Me</i></b>
+        </label> -->
+    </div>
+  </div>
+    <!-- <div class="container" style="background-color:#2878e0">
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button> 
+      
+    </div> -->
+  </form>
+</div>
+
+
